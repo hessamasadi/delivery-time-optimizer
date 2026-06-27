@@ -5,9 +5,9 @@ import numpy as np
 
 @st.cache_resource
 def load_artifacts():
-    with open(r'C:\Users\HessaM\Desktop\dataset\archive\preprocessor.pkl', 'rb') as f:
+    with open('preprocessor.pkl', 'rb') as f:
         preprocessor = pickle.load(f)
-    with open(r'C:\Users\HessaM\Desktop\dataset\archive\model.pkl', 'rb') as f:
+    with open('model.pkl', 'rb') as f:
         model = pickle.load(f)
     return preprocessor, model
 
